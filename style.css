@@ -1,0 +1,142 @@
+#navheading{
+    font-size: 35px;
+    font: weight 600px;
+    margin-left: 100px;
+}
+#navsearch{
+    margin-right: 100px;
+}
+.nav-item{
+    font-size: 22px;
+}
+#navinput{
+    font-size: 20px;
+}
+#navsearch{
+    font-size: 20px;
+}
+.section-1st{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    
+}
+.section1card{
+    margin: 20px;
+}
+.section1img > img {
+    width: 300px;
+    height: 200px;
+}
+#section1text{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 300px 150px 150px 300px;
+    grid-template-rows: 200px 200px 400px; 
+
+    gap:10px;
+    justify-content: center;
+    box-sizing: border-box
+   
+    margin-top: 50px;
+    
+}
+
+
+
+/* .grid-container>div{
+    border: 1px solid black;
+} */
+
+
+.grid-container>div>img{
+     width: 100%;
+    height: 100%; 
+    background-position: center;
+    background-size: contain;
+}
+.item1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+   
+}
+.item9{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+.section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.section3>div>img{
+    height: 200px;
+} 
+.card{
+    margin: 20px;
+    box-shadow:5px 5px 5px 7px lightgray;
+}
+
+.mainfooter{
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    
+}
+.footer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer1>div{
+    margin-inline: 130px;
+}
+.footer1>div>p{
+    font-weight: 500;
+}
+.footer2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  
+}
+
+@media screen and (min-width: 500px) and (max-width:853px)
+{
+   
+    /* .section-1st{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+          align-items: center;
+   }  */
+    .grid-container{
+    width: 80%;
+    height:80%;
+   } 
+}
+
+@media screen and (max-width: 710px){
+    .footer1{
+        text-align: left;
+        align-content: left;
+        
+    }
+    .footer1>div{
+         padding: 10px;
+         
+         
+    }
+    
+}
